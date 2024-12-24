@@ -10,7 +10,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static -static-libgcc -static-libstdc++
 set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static")
 include_directories(./src/includes)
 #@find
+find_package(cpr REQUIRED)
 set(SOURCE ./src/main.cc)#add your additional source file here!
 add_executable(${PROJECT_NAME} ${SOURCE})
 install(TARGETS ${PROJECT_NAME} DESTINATION bin)
 #@link
+target_link_libraries(${PROJECT_NAME} PRIVATE cpr::cpr)
