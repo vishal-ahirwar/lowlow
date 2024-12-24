@@ -41,7 +41,7 @@ int main(int argc, char **argv)
     // URL of the file to download
     if (argc < 3)
     {
-        fprintf(stderr, "here is how to use it : get url outputfilename.zip\n");
+        fprintf(stderr, "here is how to use it : ll url outputfilename.zip\n");
         return 0;
     };
     std::string url = argv[1];

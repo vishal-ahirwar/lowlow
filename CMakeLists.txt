@@ -1,4 +1,4 @@
-project(lowlow)
+project(ll)
 
 #Auto Genrated CMake file by aura CLI
 #Copyright 2023 Vishal Ahirwar. #replace with your copyright notice.
