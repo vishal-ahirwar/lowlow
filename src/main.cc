@@ -1,7 +1,7 @@
 #include <cpr/cpr.h>
 #include <fstream>
 #include <iostream>
-#include <tqdm.hpp>
+
 void download_file(const std::string &url, const std::string &output_file)
 {
     try
